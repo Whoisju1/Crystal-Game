@@ -1,0 +1,73 @@
+
+/*General*/
+html body {
+    width: 100%;
+}
+.main-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 5%;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around
+    flex-direction: row;
+}
+
+/*each column*/
+
+#logo {
+    display: flex;
+    justify-content: center;
+}
+
+#logo h1 {
+    border: 1px solid black;
+    text-align: center;
+    padding: 3em;
+}
+
+#instructions {
+    display: flex;
+    flex-wrap: wrap;
+
+#instructions p {
+    margin: 3%
+}
+#stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+    
+.user-stats {
+    border: 1px solid black;
+    padding: 2em;
+    }
+
+#wins {
+    
+}
+
+#random-number {
+    
+}
+
+#loses {
+    
+}
+
+#cystals {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
