@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister" rel="stylesheet">
 </head>
 <body>
 <div class="main-container">
     <div class="container" id="logo">
-        <div class="">
-             <h1>
+        <div>
+             <h1 id="crystal-logo">
                 Crystal Collector
             </h1>
         </div>
@@ -19,13 +21,19 @@
     
      <div class="container" id="instructions">
         <p>
-         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta praesentium nam, amet quibusdam rem, tempore quasi architecto perferendis iste explicabo doloremque pariatur, tempora similique harum autem? Eius culpa dolorum mollitia!
-            <br>
-            <br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta praesentium nam, amet quibusdam rem, tempore quasi architecto perferendis iste explicabo doloremque pariatur, tempora similique harum autem? Eius culpa dolorum mollitia!
+         You will be given a random number at the start of the game. 
+            <br><br>
+        There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score. 
+            <br><br>
+        You win the game by matching the total score to the random number, you loose the game if your total score goes above the random number.
+              <br><br>
+        The value of each crystal is hidden from you until you click on it.
+            <br><br>
+        Each time when the game starts, the game will change the value of each crystal.
         </p>
     </div> <!-- end of instructions -->
-
+    <div class="container">
+    </div> <!-- end of container -->
      <div class="container" id="stats">
         <div class="user-stats" id="wins">
             wins
@@ -33,16 +41,24 @@
         <div class="user-stats" id="random-number">
             random number
         </div> <!-- end of random-number -->
-        <div class="user-stats" id="loses">
+        <div class="user-stats" id="losses">
              loses
         </div> <!-- end of loses -->
     </div> <!-- end of stats -->
-
-     <div class="container" id="cystals">
-        <div>
-            Crystals
-        </div>
+     <div class="container" id="cystals">    
+         <div class="image-wrapper"> 
+            <img src="assets/images/crystal-1.png" class="crystal" id="crystal-1">
+            <img src="assets/images/crystal-2.png" class="crystal" id="crystal-2">
+            <img src="assets/images/crystal-3.png" class="crystal" id="crystal-3">
+            <img src="assets/images/crystal-4.png" class="crystal" id="crystal-4">     
+         </div> <!--end of image-wrapper-->
+         <div id="user-score">
+                 Your Total Score: 0
+        </div> <!--end of user score -->
+         </div> <!-- end of container -->
+</div> <!-- end of main-container -->
     </div> <!-- end of crystals --> 
 </div> <!--end of main-container-->
+<script src="assets/javascript/game.js"></script> 
 </body>
 </html>

@@ -2,18 +2,26 @@
 /*General*/
 html body {
     width: 100%;
+    color: black;
+/*    background-color: black;*/
+    font-family: 'Fredericka the Great', cursive;
 }
 .main-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
+    width: 60%;
+    margin: 0.5% auto;
+    padding: 1%;
+    border-radius: 4%;
+    background-color: floralwhite
 }
 
 .container {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    margin: 5%;
+    margin: 1%;
 }
 
 .stats {
@@ -30,17 +38,27 @@ html body {
 }
 
 #logo h1 {
-    border: 1px solid black;
     text-align: center;
-    padding: 3em;
+    padding: 1em;
+    font-size: 4em;
+}
+
+#crystal-logo{
+    border-radius: 50%;
+    background-color: beige;
+    color: black;
 }
 
 #instructions {
     display: flex;
     flex-wrap: wrap;
+    background-color: azure;
+    padding: 3%;
+    border-radius: 20%;
+}
 
 #instructions p {
-    margin: 3%
+    font-family: 'Love Ya Like A Sister', cursive;
 }
 #stats {
     display: flex;
@@ -50,24 +68,47 @@ html body {
 }
     
 .user-stats {
-    border: 1px solid black;
-    padding: 2em;
+    padding: 0.3em 2em;
+    color: black;
+    font-size: 2em;
     }
-
-#wins {
     
+#wins {
+    background-color: cadetblue;
+    border-radius:5px 15px;
 }
 
 #random-number {
-    
+    background-color: antiquewhite;
+    border-radius:5px 15px;
 }
 
-#loses {
-    
+#losses {
+    background-color: crimson;
+    border-radius:5px 15px;
 }
 
 #cystals {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
+    justify-content: center;
+    flex-flow: column;    
+}
+    
+.image-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%
+    }
+
+.crystal {
+    width: 15%;
+    height: 15%;
+    margin: 1em;
+}
+
+#user-score {
+font-size: 4em;
 }
